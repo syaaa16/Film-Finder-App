@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .wrap {
+    width: 380px;
+    background: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #6A5ACD;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .hasil {
+    margin-top: 20px;
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+  }
+
+  .hasil > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+  }
+
+  .hasil > div > div {
+    flex: 1;
+  }
+
+  .hasil img {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 5px;
+  }
+
+  .hasil h3 {
+    margin: 0 0 8px 0;
+  }
+
+  .hasil p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  .pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .pagination button {
+    width: auto;
+    padding: 6px 14px;
+    background: #6A5ACD;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+
